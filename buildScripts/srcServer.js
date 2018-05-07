@@ -8,10 +8,7 @@ import open from 'open';
 import webpack from 'webpack';
 import config from '../webpack.config.dev';
 
-
-/* eslint-disable no-alert */
-alert('sandeep');
-console.log('sandeep'); /* eslint-disable-line no-console */
+console.log('sandeep'); // eslint-disable-line no-console
 const port = 4500;
 const app = express();
 const compiler = webpack(config);
@@ -25,6 +22,7 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, '../src/index.html'));
 });
 
+/* eslint-disable no-console */
 app.listen(port, function(err) {
   if(err) {
     console.log(err);
