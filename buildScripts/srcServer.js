@@ -24,7 +24,7 @@ app.get('/', function(req, res) {
 
 /* eslint-disable no-console */
 app.listen(port, function(err) {
-  if(err) {
+  if (err) {
     console.log(err);
   } else{
     open('http://localhost:' + port)
