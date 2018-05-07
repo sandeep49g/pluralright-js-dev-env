@@ -1,6 +1,7 @@
 //var chalk = require('chalk');
 import chalk from 'chalk';
 
+/* eslint-disable no-console */
 if (chalk.supportsColor) {
     console.log(chalk.yellow('Starting app in dev mode...'));
     //myStyle = chalk.bgWhite.green.bold.italic;

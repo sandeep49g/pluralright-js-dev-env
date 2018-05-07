@@ -1,9 +1,8 @@
 import path from 'path';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default {
   debug: true,
-  devtool: 'inline-source-map',
+  devtool: '',
   noInfo: false,
   entry: [
     path.resolve(__dirname, 'src/index')

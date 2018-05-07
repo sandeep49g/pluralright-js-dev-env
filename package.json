@@ -9,7 +9,9 @@
     "openServer": "babel-node buildScripts/srcServer.js",
     "security-check": "nsp check",
     "local-tunnel": "lt --port 4500 --subdomain sandeep",
-    "share": "npm-run-all --parallel security-check openServer local-tunnel"
+    "share": "npm-run-all --parallel security-check openServer local-tunnel",
+    "lint": "esw webpack.config.* src buildScripts --color",
+    "lint:watch": "npm run lint -- --watch"
   },
   "author": "Sandeep Garg",
   "license": "MIT",
